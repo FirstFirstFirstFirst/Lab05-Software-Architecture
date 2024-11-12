@@ -1,0 +1,5 @@
+# Common node files across all directories
+**/node_modules/
+**/.env
+**/.DS_Store
+**/npm-debug.log

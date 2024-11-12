@@ -11,11 +11,11 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - REACT_APP_BASE_URL=http://192.168.56.102:8000
-      - WDS_SOCKET_HOST=192.168.56.102
+      - REACT_APP_BASE_URL=http://localhost:8000
+      - WDS_SOCKET_HOST=localhost
       - CHOKIDAR_USEPOLLING=true
       - WATCHPACK_POLLING=true
-  
+
   backend:
     container_name: backend
     build:
@@ -30,7 +30,7 @@ services:
       - PORT=8000
       - PLUGIN_HOST=plugin
       - PLUGIN_PORT=50001
-  
+
   plugin:
     container_name: plugin
     build:
